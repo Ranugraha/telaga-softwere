@@ -1,7 +1,7 @@
 import Head from "next/head";
-
 import { Inter } from "@next/font/google";
-import { DesignDevelopment, HeroBacgound, LogoIcon } from "../components/icon";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +14,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.svg" />
       </Head>
+
+      {/* Header */}
+      <Header />
+
+      {/* Hero Section */}
+      <Hero />
+
+      <section className="h-screen"></section>
+      <section className="h-screen"></section>
+      <section className="h-screen">
+        {" "}
+        <div className="mx-auto w-4/5 py-12 text-center">
+          <a
+            href=""
+            className=" rounded bg-blue-500 py-4 px-8 text-xl text-white transition duration-300 hover:bg-blue-300"
+          ></a>
+        </div>
+      </section>
     </>
   );
 }
