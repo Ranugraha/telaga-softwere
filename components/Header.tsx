@@ -34,22 +34,24 @@ export default function TryError({}: Props) {
         id="hero"
         className={
           visible
-            ? " fixed top-0 flex h-20 w-full flex-row items-center justify-between bg-white px-[80px]  shadow-md transition-all"
-            : "fixed top-[-80px] flex h-20 w-full flex-row items-center justify-between bg-white px-[80px] shadow-md transition-all"
+            ? "shadow-[0px 5px 8px rgb(0 0 0 / 3%)] fixed top-0 z-10 flex w-full items-center bg-sistemBackground-primary transition-all"
+            : "shadow-[0px 5px 8px rgb(0 0 0 / 3%)] fixed top-[-80px] z-10 flex w-full items-center bg-sistemBackground-primary transition-all"
         }
       >
-        <Image className="h-8 w-48" src={LogoImage} alt="" />
+        <div className="relative mx-20 flex h-20 w-full items-center justify-between 2xl:mx-36">
+          <Image className="h-8 w-48" src={LogoImage} alt="" />
 
-        <ul className="flex flex-row  space-x-[32px] font-semibold">
-          <NavbarMenu href="/" menuName="Home" />
-          <NavbarMenu href="/" menuName="About" />
-          <NavbarMenu href="/" menuName="Services" />
-          <NavbarMenu href="/" menuName="Prices" />
-          <NavbarMenu href="/" menuName="Testimonial" />
-          <li>
-            <AccentButtons buttonName="Book A Demo" />
-          </li>
-        </ul>
+          <ul className="flex flex-row  space-x-[32px] font-semibold">
+            <NavbarMenu href="/" menuName="Home" />
+            <NavbarMenu href="/" menuName="About" />
+            <NavbarMenu href="/" menuName="Services" />
+            <NavbarMenu href="/" menuName="Prices" />
+            <NavbarMenu href="/" menuName="Testimonial" />
+            <li>
+              <AccentButtons buttonName="Book A Demo" className="" />
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );

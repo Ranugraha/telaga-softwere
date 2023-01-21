@@ -9,8 +9,9 @@ function AccentButtons(props: Props) {
   return (
     <button
       className={
-        "rounded-[30px] bg-accentColors-acecent1 px-6 py-3 text-white transition-all hover:border hover:border-accentColors-acecent1 hover:bg-white hover:text-accentColors-acecent1" +
-        (props.className || "")
+        "w- hover rounded-[30px] border-2 border-accentColors-acecent1 bg-accentColors-acecent1 px-[20px] py-[6px] text-lg font-medium text-white hover:bg-white hover:text-accentColors-acecent1"
+
+        // +(props.className || "px-[20px] py-[11px]")
       }
     >
       {props.buttonName}

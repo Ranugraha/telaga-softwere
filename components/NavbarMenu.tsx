@@ -10,8 +10,10 @@ type Props = {
 function NavbarMenu(props: Props) {
   return (
     <li className="flex flex-row items-center ">
-      <Link href={props.href}>{props.menuName}</Link>
-      <DropdownIcon className="m-2" />
+      <Link href={props.href} className="flex flex-row">
+        {props.menuName}
+        <DropdownIcon className="m-2" />
+      </Link>
     </li>
   );
 }
