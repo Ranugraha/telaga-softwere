@@ -27,15 +27,7 @@ export default function Home() {
 
       <section className="h-screen bg-red-500"></section>
       <section className="h-screen"></section>
-      <section className="h-screen bg-red-500">
-        {" "}
-        <div className="mx-auto w-4/5 py-12 text-center">
-          <a
-            href=""
-            className=" rounded bg-blue-500 py-4 px-8 text-xl text-white transition duration-300 hover:bg-blue-300"
-          ></a>
-        </div>
-      </section>
+      <section className="h-screen bg-red-500"></section>
     </div>
   );
 }
